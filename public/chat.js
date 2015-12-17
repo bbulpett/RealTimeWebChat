@@ -4,8 +4,8 @@ window.onload = function() {
 	var messages = []; // Array to store the messages
 	var socket = io.connect('http://localhost:3700'); // New socket object
 	// DOM shortcuts
-	var field = document.getElementById("field");
-	var sendButton = document.getElementById("send");
+	var field = document.getElementsByClassName("field");
+	var sendButton = document.getElementsByClassName("send");
 	var content = document.getElementById("content");
 
 	// Function that reacts to the socket's activity (expects a message)
